@@ -4,6 +4,7 @@ primaryBtnText="Login Now"
 secondaryBtnText="Signup Now"
 (submit)="submit()"
 (navigate)="navigate()"
+[disablePrimaryBtn]="!loginForm.valid"
 >
 <form [formGroup]="loginForm">
     <app-primary-inputs
@@ -12,6 +13,7 @@ secondaryBtnText="Signup Now"
         type="email"
         label="Email"
         placeholder="braz@gmail.com"
+        
     
     
     >
