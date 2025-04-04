@@ -1,0 +1,17 @@
+@import "../../../styles/variables.scss";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    overflow: auto;
+    min-height: 300px;
+    border: 1px solid $secondary-color;
+    padding: 30px;
+    border-radius: 5px;
+  }
