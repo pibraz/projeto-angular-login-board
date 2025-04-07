@@ -1,18 +1,18 @@
-# ALFA TASK BOARD 
+# ALFA TASK BOARD 🚀
 
-Este projeto desenvolvi com [Angular CLI](https://github.com/angular/angular-cli) version 17.3.14. E mostra um site com páginas de login e cadastro para acesso a um Board de Tarefas, ajudando os usuários a organizar e gerenciar suas atividades de forma eficiente. 
+Este projeto desenvolvi utilizando o Angular CLI versão 17.3.14. Ele apresenta um site com páginas de login e cadastro para acesso a um Board de Tarefas, ajudando os usuários a organizar e gerenciar suas atividades de forma eficiente.
 
-## Recursos
+## 🌟 Recursos
 
-Página de Login: Permite que os usuários façam login no sistema com suas credenciais.
+Página de Login: 🔑 Permite que os usuários façam login no sistema com suas credenciais.
 
-Página de Cadastro: Oferece um formulário para criar uma conta com validações personalizadas.
+Página de Cadastro: 📝 Oferece um formulário para criar uma conta com validações personalizadas.
 
-Board de Tarefas: Exibe tarefas organizadas em categorias, com opções para adicionar e excluir tarefas.
+Board de Tarefas: 🗂️ Exibe tarefas organizadas em categorias, com opções para adicionar 🟢 e excluir 🔴 tarefas.
 
 ## 📋 Estrutura do Projeto
 
-### Paginas
+### 📁 Páginas
 
 login: Página de autenticação do usuário.
 
@@ -20,47 +20,71 @@ signup: Página de registro de novos usuários.
 
 user: Board principal para gerenciamento de tarefas.
 
-### Componentes
+### 🛠️ Componentes
 
-AddTaskComponent: Componentes do formulario de tarefas.
+AddTaskComponent: 📝 Responsável por exibir o formulário de tarefas.
 
-ButtonComponent: Resposavel por enviar novas tarefas a listagem de tarefas.
+ButtonComponent: 🟢 Envia novas tarefas para serem listadas no Board.
 
-DefautLoginLayoutComponent: Layout padrão para as páginas de login e cadastro.
+DefautLoginLayoutComponent: 📐 Layout padrão para as páginas de login e cadastro.
 
-PrimaryInputsComponent: Componentes reutilizáveis para inputs do formulário.
+PrimaryInputsComponent: 🖍️ Componentes reutilizáveis para inputs do formulário.
 
-HeaderComponent: Componente responvel pelo titulo da pagina user.
+HeaderComponent: ✨ Exibe o título da página principal (user).
 
-TaskItemComponent: Componentes responvel por excluir e marca como concluido as tarefas.
+TaskItemComponent: ✅ Responsável por marcar tarefas como concluídas ou excluir tarefas.
 
-TasksComponent: Componente responvel por exibir as tarefas
+TasksComponent: 📂 Responsável por exibir todas as tarefas.
 
-### Serviços:
+### 🔒 Serviços
 
-AuthGuardService: Serviço que verifica se os usuarios possuem autenticação para o acesso da pagina user onde encontra-se o Board de Tarefas
+AuthGuardService: 🚨 Protege rotas e verifica se os usuários possuem autenticação para acessar o Board de Tarefas.
 
-LoginService: Serviço para autenticação de usuários e integração com API.
+LoginService: 🔑 Gerencia a autenticação de usuários e realiza integração com APIs.
 
-TaskService: Serviço que envia as novas tarefas para o banco teste db.json.
-
+TaskService: 📤 Envia novas tarefas para o banco de dados simulado (db.json) e organiza as tarefas listadas.
 
 
 
 
 ## 📂 Imagens do Projeto
-<p align ="center">
-  <img src="./assets/img/Captura de Tela (72).png" alt="Página Login" width="350"/> 
-  <img src="./assets/img/Captura de Tela (73).png" alt="Erro de usuario não autentificado" width="350"/>
-  <img src="./assets/img/Captura de Tela (74).png" alt="Página de Cadastro" width="350"/>
-  <img src="./assets/img/Captura de Tela (75).png" alt="Mensagem de Usuario cadastrado" width="350"/>
-    <img src="./assets/img/Captura de Tela (76).png" alt="Página User / usuario já autentificado" width="350"/>
-    <img src="./assets/img/Captura de Tela (77).png" alt="Listagem de Tarefas" width="350"/>
-    <img src="./assets/img/Captura de Tela (80).png" alt="Erro ao tentar adicionar uma tarefa sem informa-la no formulario." width="350"/>
-    <img src="./assets/img/Captura de Tela (81).png" alt="Mensagem de sucesso ao adicionar uma tarefa." width="350"/>
+<p>
+  
+  **Página de Login**  
+  
+  <img src="src/assets/img/Captura de Tela (72).png" alt="Página Login" width="350"/> 
+  
+  **Erro: Usuário não autenticado** 
+  
+  <img src="src/assets/img/Captura de Tela (73).png" alt="Erro de usuario não autentificado" width="350"/>
+  
+  **Página de Cadastro**  
+  
+  <img src="src/assets/img/Captura de Tela (74).png" alt="Página de Cadastro" width="350"/>
+
+ **Mensagem de Sucesso: Cadastro Concluído** 
+    
+  <img src="src/assets/img/Captura de Tela (75).png" alt="Mensagem de Usuario cadastrado" width="350"/>
+
+  **Página User: Painel Principal**  
+  
+  <img src="src/assets/img/Captura de Tela (76).png" alt="Página User / usuario já autentificado" width="350"/>
+  
+   **Listagem de Tarefas**  
+   
+  <img src="src/assets/img/Captura de Tela (77).png" alt="Listagem de Tarefas" width="350"/>
+  
+  **Erro: Falha ao Adicionar Tarefa**  
+  
+  <img src="src/assets/img/Captura de Tela (80).png" alt="Erro ao tentar adicionar uma tarefa sem informa-la no formulario." width="350"/>
+
+  **Mensagem de Sucesso: Tarefa Adicionada**  
+  
+  <img src="src/assets/img/Captura de Tela (81).png" alt="Mensagem de sucesso ao adicionar uma tarefa." width="350"/>
     
 </p>
 
-## Inspiração
-   <img src="./assets/img/Captura de Tela (78).png" alt="Site figma de inspiração para o meu projeto" width="350"/>
+### Site figma de inspiração para o meu projeto
+
+   <img src="src/assets/img/Captura de Tela (78).png" alt="Site figma de inspiração para o meu projeto" width="500"/>
     
