@@ -1,27 +1,66 @@
-# ProjetoLogin
+# ALFA TASK BOARD 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.14.
+Este projeto desenvolvi com [Angular CLI](https://github.com/angular/angular-cli) version 17.3.14. E mostra um site com páginas de login e cadastro para acesso a um Board de Tarefas, ajudando os usuários a organizar e gerenciar suas atividades de forma eficiente. 
 
-## Development server
+## Recursos
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Página de Login: Permite que os usuários façam login no sistema com suas credenciais.
 
-## Code scaffolding
+Página de Cadastro: Oferece um formulário para criar uma conta com validações personalizadas.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Board de Tarefas: Exibe tarefas organizadas em categorias, com opções para adicionar e excluir tarefas.
 
-## Build
+## 📋 Estrutura do Projeto
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Paginas
 
-## Running unit tests
+login: Página de autenticação do usuário.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+signup: Página de registro de novos usuários.
 
-## Running end-to-end tests
+user: Board principal para gerenciamento de tarefas.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Componentes
 
-## Further help
+AddTaskComponent: Componentes do formulario de tarefas.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+ButtonComponent: Resposavel por enviar novas tarefas a listagem de tarefas.
+
+DefautLoginLayoutComponent: Layout padrão para as páginas de login e cadastro.
+
+PrimaryInputsComponent: Componentes reutilizáveis para inputs do formulário.
+
+HeaderComponent: Componente responvel pelo titulo da pagina user.
+
+TaskItemComponent: Componentes responvel por excluir e marca como concluido as tarefas.
+
+TasksComponent: Componente responvel por exibir as tarefas
+
+### Serviços:
+
+AuthGuardService: Serviço que verifica se os usuarios possuem autenticação para o acesso da pagina user onde encontra-se o Board de Tarefas
+
+LoginService: Serviço para autenticação de usuários e integração com API.
+
+TaskService: Serviço que envia as novas tarefas para o banco teste db.json.
+
+
+
+
+
+## 📂 Imagens do Projeto
+<p align ="center">
+  <img src="./assets/img/Captura de Tela (72).png" alt="Página Login" width="350"/> 
+  <img src="./assets/img/Captura de Tela (73).png" alt="Erro de usuario não autentificado" width="350"/>
+  <img src="./assets/img/Captura de Tela (74).png" alt="Página de Cadastro" width="350"/>
+  <img src="./assets/img/Captura de Tela (75).png" alt="Mensagem de Usuario cadastrado" width="350"/>
+    <img src="./assets/img/Captura de Tela (76).png" alt="Página User / usuario já autentificado" width="350"/>
+    <img src="./assets/img/Captura de Tela (77).png" alt="Listagem de Tarefas" width="350"/>
+    <img src="./assets/img/Captura de Tela (80).png" alt="Erro ao tentar adicionar uma tarefa sem informa-la no formulario." width="350"/>
+    <img src="./assets/img/Captura de Tela (81).png" alt="Mensagem de sucesso ao adicionar uma tarefa." width="350"/>
+    
+</p>
+
+## Inspiração
+   <img src="./assets/img/Captura de Tela (78).png" alt="Site figma de inspiração para o meu projeto" width="350"/>
+    

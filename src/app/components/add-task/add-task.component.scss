@@ -1,0 +1,100 @@
+@import "../../../styles/variables.scss";
+
+.btn {
+    display: inline-block;
+    background: $primary-color;
+    color: $title-seg-color;
+    border: none;
+    padding: 10px 20px;
+    margin: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: inherit;
+    align-items: center;
+    justify-self: center;
+
+  }
+  .btn:focus {
+    outline: none;
+  }
+  .btn:active {
+    transform: scale(0.98);
+  }
+  
+  .btn-block {
+    display: block;
+    width: 100%;
+  }
+
+.add-form{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
+  }
+
+  .add-form label {
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Adiciona negrito para destaque */
+    color: $title-seg-color; /* Cor primária da variável (ou substitua pela cor desejada) */
+    margin-bottom: 10px; /* Adiciona espaço abaixo do texto */
+    margin-top: 10px;
+    text-transform: uppercase; /* Converte o texto para maiúsculas (opcional) */
+    align-self: flex-start;
+    justify-items: auto;
+  }
+
+  
+
+  
+  .form-control label {
+    display: flex;
+    
+  }
+  
+  .form-control input {
+    width: 100%;
+    height: 40px;
+    margin: 5px;
+    padding: 3px 7px;
+    font-size: 17px;
+    
+  }
+  
+  .form-control-check {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+  }
+  
+  .form-control-check label {
+    flex: 1;
+  
+    
+  }
+  
+  .form-control-check input {
+    flex: 2;
+    height: 20px;
+  }
+  .add-form input#text {
+    background-color: $title-seg-color; /* Cor de fundo personalizada */
+    border: 1px solid $primary-color; /* Cor da borda */
+    border-radius: 5px; /* Arredonda os cantos */
+    padding: 10px; /* Adiciona espaçamento interno */
+    font-size: 16px; /* Ajusta o tamanho do texto */
+
+  }
+
+  .add-form select {
+    background-color: $title-seg-color;/* Cor de fundo do menu suspenso */
+    border: 1px solid $primary-color; /* Cor da borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho do texto */
+    cursor: pointer; /* Mostra o ponteiro ao passar sobre o menu */
+}
+

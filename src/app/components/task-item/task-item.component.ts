@@ -23,4 +23,12 @@ export class TaskItemComponent {
 
   faTimes = faTimes
 
+  onDelete(tarefa: Tarefa){
+    this.onDeleteTask.emit(tarefa);
+  }
+
+  onToggle(tarefa: Tarefa){
+    this.onToggleConcluido.emit(tarefa);
+  }
+
 }

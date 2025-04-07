@@ -7,8 +7,8 @@ import { LoginService } from '../../services/login.service';
 import { ToastrService } from 'ngx-toastr';
 
 interface LoginForm {
-  email :FormControl,
-  password: FormControl
+  email: FormControl;
+  password: FormControl;
 }
 
 @Component({
@@ -17,42 +17,41 @@ interface LoginForm {
   imports: [
     DefautLoginLayoutComponent,
     ReactiveFormsModule,
-    PrimaryInputsComponent
+    PrimaryInputsComponent,
   ],
-  providers:[
-      LoginService
-
+  providers: [
+    LoginService,
   ],
   templateUrl: './login.component.html',
-  styleUrl: './login.component.scss'
+  styleUrls: ['./login.component.scss'], // Corrigido 'styleUrl' para 'styleUrls' (plural).
 })
 export class LoginComponent {
-  loginForm!: FormGroup <LoginForm>;
+  loginForm!: FormGroup<LoginForm>;
 
   constructor(
     private router: Router,
     private loginService: LoginService,
     private toastService: ToastrService
-
-  ){
+  ) {
     this.loginForm = new FormGroup({
-      email: new FormControl ('',[Validators.required]),
-      password: new FormControl ('',[Validators.required, Validators.minLength(6)])
-    })
-
+      email: new FormControl('', [Validators.required]),
+      password: new FormControl('', [Validators.required, Validators.minLength(6)]),
+    });
   }
 
-  submit(){
+  submit() {
     this.loginService.login(this.loginForm.value.email, this.loginForm.value.password).subscribe({
-      next: () => this.toastService.success("Login efetetuado com sucesso!"),
-      error: () => this.toastService.error("Opss! Erro inesperado! Tente novamente.")
-    })
-      
-
+      next: () => {
+        this.toastService.success("Login efetuado com sucesso!");
+        this.router.navigate(["user"]); // Redireciona para a rota 'user'.
+      },
+      error: () => {
+        this.toastService.error("Opss! Erro inesperado! Tente novamente.");
+      }
+    });
   }
 
-  navigate(){
-    this.router.navigate(["signup"])
+  navigate() {
+    this.router.navigate(["signup"]);
   }
-
-  }
+}

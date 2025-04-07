@@ -6,7 +6,24 @@
     padding: 0;
   }
   
+.container_p{
+  display: flex; /* Permite criar layouts flexíveis */
+  flex-direction: column; /* Organiza os elementos em uma coluna */
+  align-items: center; /* Centraliza os elementos horizontalmente */
+  justify-content: center; /* Centraliza os elementos verticalmente */
+  height: 100vh; /* Ocupa 100% da altura da janela */
+  background-image: url('/assets/img/ceu_artigo.jpg'); /* Imagem de fundo */
+  background-size: cover; /* Faz com que a imagem cubra toda a área */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
+  background-position: center; /* Centraliza a imagem de fundo */
+  padding: 20px; /* Adiciona espaçamento interno */
+  box-sizing: border-box; /* Inclui o padding na largura e altura */
+  
+
+
+  }
 .container {
+  
     max-width: 900px;
     margin: 30px auto;
     overflow: auto;
@@ -14,4 +31,6 @@
     border: 1px solid $secondary-color;
     padding: 30px;
     border-radius: 5px;
+    
+    
   }

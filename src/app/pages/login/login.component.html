@@ -1,7 +1,7 @@
 <app-defaut-login-layout
-title="Login into your account"
-primaryBtnText="Login Now"
-secondaryBtnText="Signup Now"
+title="Faça login na sua conta"
+primaryBtnText="Faça login agora"
+secondaryBtnText="Cadastre-se agora"
 (submit)="submit()"
 (navigate)="navigate()"
 [disablePrimaryBtn]="!loginForm.valid"
@@ -23,11 +23,11 @@ secondaryBtnText="Signup Now"
         formControlName="password"
         inputName="password"
         type="password"
-        label="Your Password"
+        label="Sua senha"
     >
         <img src="/assets/svg/password-icon.svg"/>
     </app-primary-inputs>
-       <span>Forgot password?</span> 
+       <span><button>Esqueceu a senha?</button></span> 
 
     </form>
 </app-defaut-login-layout>

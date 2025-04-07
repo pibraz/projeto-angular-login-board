@@ -1,16 +1,28 @@
 {
-    "tasks": [
-      {
-        "id": "da91",
-        "tarefa": "Estudar Angular",
-        "categoria": "Faculdade",
-        "concluido": true
-      },
-      {
-        "id": "da91",
-        "tarefa": "Estudar Angular",
-        "categoria": "Faculdade",
-        "concluido": true
-      }
-    ]
-  }
+  "tasks": [
+    {
+      "id": "a8ef",
+      "tarefa": "Treino de bíceps",
+      "categoria": "ACADAMIA",
+      "concluido": true
+    },
+    {
+      "id": "31d8",
+      "tarefa": "Estudar Angular",
+      "categoria": "FACULDADE",
+      "concluido": true
+    },
+    {
+      "id": "15a9",
+      "tarefa": "Lavar louça",
+      "categoria": "CASA",
+      "concluido": false
+    },
+    {
+      "id": "21ac",
+      "tarefa": "Caminhar na praia",
+      "categoria": "LAZER",
+      "concluido": false
+    }
+  ]
+}

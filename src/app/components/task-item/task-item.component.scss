@@ -1,15 +1,17 @@
 @import "../../../styles/variables.scss";
 
+
 .task{
-    background: $text-color;
+    background: $secondary-color;
     margin: 5px;
     cursor: pointer;
     padding: 10px 20px;
+    border-radius: 5px;
 }
 
 
 .task.reminder{
-    border-left: 5px solid green;
+    border-left: 7px solid green;
 }
 
 .task h3 {
