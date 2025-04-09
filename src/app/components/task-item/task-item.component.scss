@@ -1,12 +1,22 @@
 @import "../../../styles/variables.scss";
 
 
+
+
 .task{
-    background: $secondary-color;
+    background: $primary-color;
     margin: 5px;
     cursor: pointer;
     padding: 10px 20px;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    
+
+    
+    
 }
 
 
@@ -14,8 +24,11 @@
     border-left: 7px solid green;
 }
 
-.task h3 {
+.task h4 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: $title-seg-color;
+    
+    
 }

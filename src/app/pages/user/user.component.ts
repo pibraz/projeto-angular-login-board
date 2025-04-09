@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from '../../components/header/header.component';
 import { TasksComponent } from '../../components/tasks/tasks.component';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -16,5 +17,11 @@ import { TasksComponent } from '../../components/tasks/tasks.component';
   styleUrl: './user.component.scss'
 })
 export class UserComponent {
+  constructor(private router: Router) {}
+
+  logout() {
+    // Redireciona para a página de login
+    this.router.navigate(['/login']);
+  }
 
 }

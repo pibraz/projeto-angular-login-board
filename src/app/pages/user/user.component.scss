@@ -7,30 +7,57 @@
   }
   
 .container_p{
-  display: flex; /* Permite criar layouts flexíveis */
-  flex-direction: column; /* Organiza os elementos em uma coluna */
-  align-items: center; /* Centraliza os elementos horizontalmente */
-  justify-content: center; /* Centraliza os elementos verticalmente */
-  height: 100vh; /* Ocupa 100% da altura da janela */
-  background-image: url('/assets/img/ceu_artigo.jpg'); /* Imagem de fundo */
-  background-size: cover; /* Faz com que a imagem cubra toda a área */
-  background-repeat: no-repeat; /* Evita repetição da imagem */
-  background-position: center; /* Centraliza a imagem de fundo */
-  padding: 20px; /* Adiciona espaçamento interno */
-  box-sizing: border-box; /* Inclui o padding na largura e altura */
-  
 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  height: 100vh; 
+  background-image: url('/assets/img/ceu_artigo.jpg'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  padding: 20px; 
+  box-sizing: border-box; 
 
   }
-.container {
+
+  .container {
   
     max-width: 900px;
     margin: 30px auto;
     overflow: auto;
     min-height: 300px;
-    border: 1px solid $secondary-color;
     padding: 30px;
     border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.562);
     
     
   }
+
+
+  .btn-logout {
+    display: inline-block;
+    background-color: transparent; 
+    color: $primary-color; /* Cor do texto */
+    border: 2px solid $primary-color; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    font-size: 14px; /* Tamanho da fonte */
+    cursor: pointer; 
+    text-transform: uppercase; /* Texto em letras maiúsculas */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: 5px;
+    margin-top: 10px;
+  
+    &:hover {
+      background-color: $primary-color; 
+      color: $title-seg-color /* Cor do texto ao passar o mouse */
+    }
+  
+    &:focus {
+      outline: none; /* Remove o contorno padrão ao focar */
+    }
+  }
+
+ 

@@ -1,28 +1,22 @@
 {
   "tasks": [
     {
-      "id": "a8ef",
-      "tarefa": "Treino de bíceps",
+      "id": "c8b2",
+      "tarefa": "Beber mais agua",
+      "categoria": "CASA",
+      "concluido": true
+    },
+    {
+      "id": "0ccc",
+      "tarefa": "Treino de Perna",
       "categoria": "ACADAMIA",
       "concluido": true
     },
     {
-      "id": "31d8",
+      "id": "398d",
       "tarefa": "Estudar Angular",
       "categoria": "FACULDADE",
       "concluido": true
-    },
-    {
-      "id": "15a9",
-      "tarefa": "Lavar louça",
-      "categoria": "CASA",
-      "concluido": false
-    },
-    {
-      "id": "21ac",
-      "tarefa": "Caminhar na praia",
-      "categoria": "LAZER",
-      "concluido": false
     }
   ]
 }

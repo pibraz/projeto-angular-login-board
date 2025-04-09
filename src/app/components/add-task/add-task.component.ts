@@ -36,7 +36,7 @@ export class AddTaskComponent {
   onSubmit(): void {
     // Valida se o campo de tarefa está vazio
     if (!this.tarefa.trim()) {
-      this.toastr.error('Opss! Adicione uma tarefa válida!', 'ERRO!'); // Notificação de erro
+      this.toastr.error('Opss! Nenhuma tarefa adicionada! Insira uma tarefa.', 'ERRO!'); // Notificação de erro
       return;
     }
 
