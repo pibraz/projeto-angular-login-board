@@ -68,6 +68,7 @@ TaskService: 📤 Envia novas tarefas para o banco de dados simulado (db.json) e
 
   **Página User: Painel Principal**  
   
+<<<<<<< HEAD
   <img src="src/assets/img/Captura de Tela (83).png" alt="Página User / usuario já autentificado" width="350"/>
   
    **Listagem de Tarefas**  
@@ -81,6 +82,21 @@ TaskService: 📤 Envia novas tarefas para o banco de dados simulado (db.json) e
   **Mensagem de Sucesso: Tarefa Adicionada**  
   
   <img src="src/assets/img/Captura de Tela (87).png" alt="Mensagem de sucesso ao adicionar uma tarefa." width="350"/>
+=======
+  <img src="src/assets/img/Captura de Tela (76).png" alt="Página User / usuario já autentificado" width="350"/>
+  
+   **Listagem de Tarefas**  
+   
+  <img src="src/assets/img/Captura de Tela (77).png" alt="Listagem de Tarefas" width="350"/>
+  
+  **Erro: Falha ao Adicionar Tarefa**  
+  
+  <img src="src/assets/img/Captura de Tela (80).png" alt="Erro ao tentar adicionar uma tarefa sem informa-la no formulario." width="350"/>
+
+  **Mensagem de Sucesso: Tarefa Adicionada**  
+  
+  <img src="src/assets/img/Captura de Tela (81).png" alt="Mensagem de sucesso ao adicionar uma tarefa." width="350"/>
+>>>>>>> f9bc738efb51c4e26d3b39bbca71f8dfe525d353
     
 </p>
 
